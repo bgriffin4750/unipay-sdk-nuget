@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -53,7 +52,7 @@ namespace UniPaySdkWrapper
 
         private static CardInfo GetCardInfo(string input)
         {
-            var cInfo = new CardInfo { Cipher = input };
+            var cInfo = new CardInfo {Cipher = input};
 
             input = GetRawData(input);
             cInfo.RawData = input;
@@ -115,7 +114,7 @@ namespace UniPaySdkWrapper
         }
 
         private static void SetName(CardInfo cInfo, int firstCaretInx, int lastCaretInx, string trackMask)
-        {            
+        {
             if (firstCaretInx > -1 && lastCaretInx > -1 && firstCaretInx != lastCaretInx)
             {
                 var nameLength = lastCaretInx - firstCaretInx - 1;
@@ -192,6 +191,5 @@ namespace UniPaySdkWrapper
 
             return sb.ToString();
         }
-
     }
 }
