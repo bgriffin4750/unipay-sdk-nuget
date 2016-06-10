@@ -287,6 +287,11 @@ namespace UniPaySdkWrapper
         /// </summary>
         public CardReaderResponse CancelRead()
         {
+            if (MsrBackgroundWorker.IsBusy)
+            {
+                MsrBackgroundWorker.CancelAsync();
+            }
+
             return (CardReaderResponse)UniPay_CancelMSR();
         }
 
