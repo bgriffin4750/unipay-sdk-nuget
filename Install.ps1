@@ -1,11 +1,12 @@
 param($installPath, $toolsPath, $package, $project)
 
-$file = $project.ProjectItems.Item("libtidy.dll");
+$fileName = "UniPay_SDK.dll";
+$file = $project.ProjectItems.Item($fileName);
 
 If ($file -eq $null)
 {
-    $project.ProjectItems.AddFromFile("libtidy.dll");
-    $file = $project.ProjectItems.Item("libtidy.dll");
+    $project.ProjectItems.AddFromFile($fileName);
+    $file = $project.ProjectItems.Item($fileName);
 }
 
 $file.Properties.Item("CopyToOutputDirectory").Value = [int]1;

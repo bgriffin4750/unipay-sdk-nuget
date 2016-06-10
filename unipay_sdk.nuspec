@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>U</id>
+    <id>UniPay</id>
     <version>1.0.0</version>
     <authors>bgriffin4750</authors>
     <owners>bgriffin4750</owners>
@@ -9,7 +9,7 @@
     <description>Package for interfacing with idtech card reader</description>
   </metadata>
   <files>
-    <file src="UniPaySdkWrapper\bin\UniPaySdkWrapper.dll" target="lib" />
+    <file src="UniPaySdkWrapper\bin\Debug\UniPaySdkWrapper.dll" target="lib" />
     <file src="UniPay_SDK.dll" target="content" />
     <file src="Install.ps1" target="tools" />
   </files>

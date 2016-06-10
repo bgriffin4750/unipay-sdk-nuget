@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E6FB350F-22E6-4F33-AFEC-89F9EA830788}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{CB72FB3A-E85A-49B8-897F-0BFD16354153}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UniPaySdkWrapper</RootNamespace>
-    <AssemblyName>UniPaySdkWrapper</AssemblyName>
+    <RootNamespace>CardReaderSample</RootNamespace>
+    <AssemblyName>CardReaderSample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,19 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardDataReader.cs" />
-    <Compile Include="CardInfo.cs" />
-    <Compile Include="CardReader.cs" />
-    <Compile Include="CardReaderConstants.cs" />
-    <Compile Include="CardReaderException.cs" />
-    <Compile Include="CardReaderResponse.cs" />
-    <Compile Include="CardSwipedEventArgs.cs" />
-    <Compile Include="CardType.cs" />
-    <Compile Include="CardTypeInfo.cs" />
-    <Compile Include="EncryptionType.cs" />
-    <Compile Include="MsrData.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrackType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
