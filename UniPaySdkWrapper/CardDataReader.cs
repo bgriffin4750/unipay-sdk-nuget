@@ -46,7 +46,7 @@ namespace UniPaySdkWrapper
 
             ret.Last4 = GetLast4(firstCaretInx, track1Mask);
 
-            ret.CardType = GetCardType(ret.First4, ret);
+            ret.CardType = GetCardType(track1Mask, ret);
 
             return ret;
         }
