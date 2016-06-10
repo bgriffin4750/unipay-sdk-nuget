@@ -10,5 +10,6 @@ vary depending on what you have in the id and version tags in your nuspec file.
 5. Right click the CardReaderSample project in VisualStudio and selec 'Manage NuGet Packages'
 6. Select the package from your local directory and install it.
 7. Build CardReaderSample.
+
 At this point, you will have added your wrapper along with the COM library to CardReaderSample. By building CardReaderSample,
 you will find both libraries: UniPaySdkWrapper.dll and UniPay_SDK.dll in the output directory. If you want to see this connect to your idtech card reader, uncomment the code found in CardReaderSample\Program.cs
