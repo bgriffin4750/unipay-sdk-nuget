@@ -1,0 +1,5 @@
+C:\Users\brandon\tech\unipay-sdk-nuget\UniPaySdkWrapper\bin\Debug\UniPaySdkWrapper.dll
+C:\Users\brandon\tech\unipay-sdk-nuget\UniPaySdkWrapper\bin\Debug\UniPaySdkWrapper.pdb
+C:\Users\brandon\tech\unipay-sdk-nuget\UniPaySdkWrapper\obj\Debug\UniPaySdkWrapper.csprojResolveAssemblyReference.cache
+C:\Users\brandon\tech\unipay-sdk-nuget\UniPaySdkWrapper\obj\Debug\UniPaySdkWrapper.dll
+C:\Users\brandon\tech\unipay-sdk-nuget\UniPaySdkWrapper\obj\Debug\UniPaySdkWrapper.pdb
